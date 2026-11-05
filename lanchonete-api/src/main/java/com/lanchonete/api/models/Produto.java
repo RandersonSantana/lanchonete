@@ -3,8 +3,8 @@ package com.lanchonete.api.models;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "lanches")
-public class Lanche {
+@Table(name = "produts")
+public class Produto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -16,10 +16,10 @@ public class Lanche {
 
     private Double preco;
 
-    public Lanche(){
+    public Produto(){
     }
 
-    public Lanche(Long id, String nome, String descricao, Double preco) {
+    public Produto(Long id, String nome, String descricao, Double preco) {
         this.id = id;
         this.nome = nome;
         this.descricao = descricao;
